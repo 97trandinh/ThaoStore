@@ -11,6 +11,7 @@ img {
 h1,h2,h3,h4,h5,h6,hr,p {
     margin: 0;
 }
+.hidden{ display: none !important;}
 .admin {
      .left {
          background-color: black;
@@ -95,6 +96,9 @@ h1,h2,h3,h4,h5,h6,hr,p {
                 .icon {
                     right: 10px;
                 }
+            }
+            .nav-menu {
+                display: none;
             }
         }
     }

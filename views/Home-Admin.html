@@ -13,80 +13,79 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="stylesheet" href="../css/store.css">
 </head>
+
 <body>
     <div class="admin">
-           <div class="left">
-              <div class="left-header d-flex align-items-center justify-content-center">
-                    <h1>Thao Store</h1>
-                    <div class="icon">
-                        <i class="fa-solid fa-arrow-left"></i>
-                    </div>
+        <div class="left">
+            <div class="left-header d-flex align-items-center justify-content-center">
+                <span class="hidden">Thao Store</span>
+                <span>T</span>
+                <div class="icon">
+                    <i class="hidden fa-solid fa-arrow-left"></i>
+                    <i class="fa-solid fa-bars"></i>
                 </div>
-                    <ul class="nav nav-pills flex-column mt-2" id="menu">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" aria-current="page">
-                                <i class="fa fa-gauge m-auto"></i>
-                                <span>Dashboard</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" aria-current="page">
-                                <span>UI ELEMENT</span>
-                            </a>
-                        </li>
-                        <hr class="text-white mt-1" />
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" aria-current="page">
-                                <i class="fa-solid fa-list"></i>
-                                <span >Categories</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#"  class="nav-link"
-                                aria-expanded="false">
-                                <i class="fa fa-table"></i>
-                                <span>Products</span>
-                            </a>
-                         
-                        </li>
-                        <li class="nav-item ">
-                            <a href="#" class="nav-link" aria-current="page">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                                <span>Order</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" aria-current="page">
-                                <i class="fa fa-users p-0"></i>
-                                <span>Customer</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" aria-current="page">
-                                <i class="fa-solid fa-id-card"></i>
-                                <span>Profile</span>
-                            </a>
-                        </li>
-                    </ul>
-           </div>
-           <div class="right">
-                <div class="right-header">
-                    <div class="header-icon">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-solid fa-bell"></i>
-                        <i class="fa-solid fa-envelope"></i>
-                    </div>
-                    <div class="d-flex align-items-center ">
-                        <img class="flag" 
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMF-Ly3Re3LxcOi4Bz61Rqj9iR2_DAX4EanQ&s"
-                            alt="">
-                        <img class="avatar rounded-circle ms-2 "
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7Jf7L1uLyKL81OhzN2fk-x0OSKXABNLEZYg&s"
-                            alt="">
-                    </div>
+            </div>
+            <ul class="nav  nav-menu flex-column mt-2" id="menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link" aria-current="page">
+                        <i class="fa fa-gauge m-auto"></i>
+                        <span class="hidden">Dashboard</span>
+                    </a>
+                </li>
+                <span class="hidden">UI ELEMENT</span>
+                <hr class="text-white mt-1" />
+                <li class="nav-item">
+                    <a href="#" class="nav-link" aria-current="page">
+                        <i class="fa-solid fa-list"></i>
+                        <span class="hidden">Categories</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" aria-expanded="false">
+                        <i class="fa fa-table"></i>
+                        <span class="hidden">Products</span>
+                    </a>
+
+                </li>
+                <li class="nav-item ">
+                    <a href="#" class="nav-link" aria-current="page">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="hidden">Order</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" aria-current="page">
+                        <i class="fa fa-users p-0"></i>
+                        <span class="hidden">Customer</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" aria-current="page">
+                        <i class="fa-solid fa-id-card"></i>
+                        <span class="hidden">Profile</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="right-header">
+                <div class="header-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-bell"></i>
+                    <i class="fa-solid fa-envelope"></i>
                 </div>
-           </div>    
+                <div class="d-flex align-items-center ">
+                    <img class="flag"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMF-Ly3Re3LxcOi4Bz61Rqj9iR2_DAX4EanQ&s"
+                        alt="">
+                    <img class="avatar rounded-circle ms-2 "
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7Jf7L1uLyKL81OhzN2fk-x0OSKXABNLEZYg&s"
+                        alt="">
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="../js/home-admin.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
@@ -95,4 +94,5 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
