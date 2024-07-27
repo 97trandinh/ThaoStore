@@ -1,15 +1,21 @@
 {
   "categories": [
     {
-      "nameCategory": "Mobile",
-      "nameBrand": "Samsung",
-      "logo": "https://banner2.cleanpng.com/20190318/zfp/kisspng-logo-samsung-group-font-brand-printer-logo-samsung-kumpulan-logo-lambang-indonesia-5c8f63c8ec27d7.8151377715529010649673.jpg",
-      "id": "1"
+      "id": "1",
+      "logo": "https://vn4u.vn/wp-content/uploads/2023/09/logo-co-tinh-nhat-quan-2.png",
+      "nameCategory": "Pepsi",
+      "nameBrand": "Pepsi"
     },
     {
-      "nameCategory": "moblie1",
+      "id": "2",
+      "logo": "https://vn4u.vn/wp-content/uploads/2023/09/logo-co-tinh-nhat-quan-2.png",
+      "nameCategory": "Pepsi",
+      "nameBrand": "Pepsi"
+    },
+    {
+      "nameCategory": "moblie",
       "nameBrand": "samsung1",
-      "logo": "https://firebasestorage.googleapis.com/v0/b/thaostore-84b1d.appspot.com/o/images%2FA%20whimsical%20and%20artistic%20portrayal%20of%20a%20dog%20and%20cat%20duo.png?alt=media&token=fb4a529d-af93-4d94-9bd6-fb232ac4d252",
+      "logo": "https://firebasestorage.googleapis.com/v0/b/thaostore-84b1d.appspot.com/o/images%2Fcv.jpg?alt=media&token=bbb7631a-3dee-4d3b-b551-4cf816998a0a",
       "id": "3"
     }
   ]

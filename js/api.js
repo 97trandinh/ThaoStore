@@ -1,4 +1,5 @@
 const urlCategory ="http://localhost:3000/categories";
+const urlProduct ="http://localhost:3000/products";
 //#region Get All
 async function getAll(url, callback) {
     try{

@@ -130,7 +130,51 @@
 
 
                 </div>
-                <div class="box">Products</div>
+                <div class="box">
+                    <div class="header-categories">
+                        <h1>List Products</h1>
+                        <div class="search">
+                            <input class="form-control" type="search" placeholder="Search..." aria-label="Search">
+                            <button class="btn btn-outline" type="submit"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                        <button type="button" onclick="addProduct()" class="btn btn" data-bs-toggle="modal" data-bs-target="#modalEditProduct">Add
+                            Product</button>
+                    </div>
+                    <table class=" container table table-striped table-hover mt-2">
+                        <thead>
+                            <tr>
+                                <th scope="col">STT</th>
+                                <th scope="col">Logo</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Category</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="data-categories"></tbody>
+                    </table>
+                    <div class="pagination">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
                 <div class="box">Order</div>
                 <div class="box">Custumers</div>
                 <div class="box">Profile</div>
@@ -166,7 +210,7 @@
                         </div>
                         <div class="modal-body">
                             <div class="mb-3">
-                                <img id="img-category" src="../img/logo.png" alt="">
+                                <img id="img-category" src="" alt="">
                             </div>
                             <div class="mb-3 ">
                                 <input type="file" id="fileInput" class="form-control" onchange="handleFileChange(event)" required>
@@ -191,6 +235,52 @@
             </div>
         </div>
     </div>
+     <!-- Modal Edit Product Or Add Product-->
+     <div class="modal fade" id="modalEditProduct" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form class="row g-3 needs-validation" id="addCategory" novalidate>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="add-category"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <img id="img-category" src="" alt="">
+                        </div>
+                        <div class="mb-3 ">
+                            <input type="file" id="fileInput" class="form-control" onchange="handleFileChange(event)" required>
+                        </div>
+                        <div class="mb-3 ">
+                            <label for="exampleFormControlInput1" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="nameCategory" placeholder="Enter your name"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Quantity</label>
+                            <input type="number" class="form-control" id="quantityProduct" placeholder="Enter Quantity"
+                            required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Price</label>
+                            <input type="number" class="form-control" id="priceProduct" placeholder="Enter Price"
+                            required>
+                        <div class="mb-3 ">
+                            <label for="exampleFormControlInput1" class="form-label">Category</label>
+                            <select id="optionCategories">
+                                <option disabled selected>Choose category</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary" id="updateCategory">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
     <!-- Firebase App (the core Firebase SDK) -->
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <!-- Firebase Storage -->
@@ -199,6 +289,7 @@
     <script src="../js/validation bs5.js"></script>
     <script src="../js/fireBase-config.js"></script>
     <script src="../js/getCategories.js"></script>
+    <script src="../js/getProducts.js"></script>
     <script src="../js/home-admin.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

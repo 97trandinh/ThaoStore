@@ -3,12 +3,14 @@ const storage = firebase.storage();
 let idDelete;
 var categoriesData;
 var urlImg ;
+
 function displayCategories(data){
     let categories = document.getElementById("data-categories");
     categoriesData =data; 
     data.forEach((element,index) => {
-        const tr = document.createElement("tr");
-        tr.innerHTML = `
+   
+        categories.innerHTML += `
+        <tr>
         <th scope="row">${index + 1}</th>
         <td>
             <img style="width: 50px;" src="${element.logo}" alt="">
@@ -16,16 +18,16 @@ function displayCategories(data){
         <td>${element.nameCategory}</td>
         <td>${element.nameBrand}</td>
         <td>
-            <button type="botton" data-bs-toggle="modal" data-bs-target="#modalEdit" class="btn btn-success" onclick="editById(${element.id})" > <i class="fa-solid fa-pen-to-square"></i></button>
-            <button type="botton" data-bs-toggle="modal" data-bs-target="#deleteCategories" class="btn btn-danger" onclick="getbyId(${element.id})"> <i class="fa-solid fa-trash"></i></button>
-        </td>`;
-        categories.appendChild(tr);
+            <button type="button" data-bs-toggle="modal" data-bs-target="#modalEdit" class="btn btn-success" onclick="editById(${element.id})" > <i class="fa-solid fa-pen-to-square"></i></button>
+            <button onclick="getthao(${element.id})" type="button" data-bs-toggle="modal" data-bs-target="#deleteCategories" class="btn btn-danger" > <i class="fa-solid fa-trash"></i></button>
+        </td>
+        <tr/>
+        `;
     });
 }
-function getbyId(id){
+function getthao(id){
    
-    console.log(id);
-    idDelete= id;
+   console.log("thao",id);
 };
 function deleteCategories(){
     deleted(urlCategory,idDelete);
@@ -107,9 +109,10 @@ function uploadImage() {
   }
   
   function addCatogory () {
+    document.getElementById("addCategory").reset();
+    document.getElementById("img-category").src = "../img/logo.png";
     var title2 = document.getElementById("updateCategory");
     title2.innerText = "SAVE";
     var title = document.getElementById("add-category");
     title.innerText = "ADD CATEGORY";
-    
   }
